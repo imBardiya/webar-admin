@@ -1,0 +1,20 @@
+{
+  "targets": [
+    {
+      "id": "target1",
+      "videos": {
+        "fa": "target1/fa.mp4",
+        "en": "target1/en.mp4"
+      },
+      "image": "target1/image.jpg"
+    },
+    {
+      "id": "target2",
+      "videos": {
+        "fa": "target2/fa.mp4",
+        "en": "target2/en.mp4"
+      },
+      "image": "target2/image.jpg"
+    }
+  ]
+}

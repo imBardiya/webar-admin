@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>پنل ادمین WebAR</title>
+</head>
+<body>
+  <h1>آپلود تارگت جدید</h1>
+  <form method="post" action="/admin/upload" enctype="multipart/form-data">
+    <label>شناسه تارگت:</label><br>
+    <input type="text" name="target_id" required><br><br>
+    
+    <label>زبان (مثلاً en یا fa):</label><br>
+    <input type="text" name="language" required><br><br>
+
+    <label>تصویر:</label><br>
+    <input type="file" name="image" accept="image/*" required><br><br>
+
+    <label>ویدیو:</label><br>
+    <input type="file" name="video" accept="video/mp4" required><br><br>
+
+    <button type="submit">آپلود</button>
+  </form>
+
+  {% if message %}
+    <p style="color: {{ 'green' if success else 'red' }}">{{ message }}</p>
+  {% endif %}
+</body>
+</html>

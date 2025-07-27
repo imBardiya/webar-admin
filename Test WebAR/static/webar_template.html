@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WebAR Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image-three.prod.js"></script>
+  <style>body { margin: 0; overflow: hidden; }</style>
+</head>
+<body>
+  <script type="module">
+    import {loadVideoOnTarget} from "./static/player.js";
+
+    const targetId = "{{TARGET_ID}}";
+    loadVideoOnTarget(targetId);
+  </script>
+</body>
+</html>
